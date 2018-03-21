@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "0.0.17",
+    "react-google-login": "^3.0.10"
+  }
 }
