@@ -1,0 +1,19 @@
+{
+  "name": "react-components",
+  "version": "1.0.0",
+  "description": "react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolgk/react-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coolgk/react-components/issues"
+  },
+  "homepage": "https://github.com/coolgk/react-components#readme"
+}
