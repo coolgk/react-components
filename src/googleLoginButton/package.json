@@ -7,7 +7,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "rm ./dist/* && tsc"
+    "build": "rm -f ./dist/* && tsc"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.4",

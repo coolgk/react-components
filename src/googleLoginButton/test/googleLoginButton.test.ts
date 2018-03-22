@@ -1,4 +1,4 @@
-import * as React from 'react';
+/* import * as React from 'react';
 import { shallow } from 'enzyme';
 import * as sinon from 'sinon';
 
@@ -48,3 +48,4 @@ describe('<GoogleLoginButton />', () => {
     //   expect(onButtonClick).to.have.property('callCount', 1);
     // });
 });
+ */
