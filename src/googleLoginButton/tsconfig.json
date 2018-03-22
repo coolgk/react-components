@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "declaration": true,
+    "module": "esnext",
+    "target": "ES2017",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "sourceMap": false,
+    "removeComments": true,
+    "strict": true
+  },
+  "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+  ]
+}

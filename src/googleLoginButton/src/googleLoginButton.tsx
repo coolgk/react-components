@@ -6,7 +6,7 @@ import fontawesome from '@fortawesome/fontawesome';
 import * as faGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
 fontawesome.library.add(faGoogle);
 
-import './googleLoginButton.css';
+import '../assets/googleLoginButton.css';
 
 export { GoogleLoginResponse, GoogleLoginResponseOffline };
 
