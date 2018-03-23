@@ -7,7 +7,7 @@ import readme from '../README.md';
 
 storiesOf('Google Login Button', module)
 .add(
-    'demo',
+    'Demo',
     // withNotes(readme)(
     () => (
         <div style={{padding: '1em'}}>
@@ -21,6 +21,6 @@ storiesOf('Google Login Button', module)
 )
 .add(
     'Read Me',
-    () => <div dangerouslySetInnerHTML={{__html: readme}} />
+    () => <div style={{padding: '1em'}} dangerouslySetInnerHTML={{__html: readme}} />
 )
 ;

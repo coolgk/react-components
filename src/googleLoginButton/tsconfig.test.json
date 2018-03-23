@@ -7,15 +7,16 @@
     "target": "ES2016",
     "moduleResolution": "node",
     "jsx": "react",
-    "rootDir": "./src",
+    "rootDir": "./",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "sourceMap": false,
-    "removeComments": true,
+    "sourceMap": true,
+    "removeComments": false,
     "strict": true
   },
   "include": [
+      "test/**/*.tsx",
       "src/**/*.ts",
       "src/**/*.tsx"
   ]
