@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "pretest": "rm -fr ./dist/* && cp -r ./assets ./dist/assets && tsc --project tsconfig.test.json",
-    "test": "mocha --recursive --require source-map-support/register --require ignore-styles ./dist/test",
+    "test": "mocha --recursive --require source-map-support/register --require ignore-styles ./dist/tests",
     "build": "rm -fr ./dist/* && tsc"
   },
   "dependencies": {
