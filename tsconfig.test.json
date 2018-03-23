@@ -7,7 +7,7 @@
     "target": "ES2017",
     "moduleResolution": "node",
     "jsx": "react",
-    "rootDir": "./",
+    "rootDir": "./src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -16,8 +16,10 @@
     "strict": true
   },
   "include": [
-      "src/**/tests/**/*.tsx",
-      "src/**/*.ts",
-      "src/**/*.tsx"
+      "src/*/src/*.tsx",
+      "src/*/tests/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
