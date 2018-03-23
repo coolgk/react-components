@@ -11,7 +11,7 @@ import 'mocha';
 import * as sinon from 'sinon';
 import { expect } from 'chai';
 
-import { GoogleLogin, GoogleLoginResponse, GoogleLoginResponseOffline } from 'react-google-login';
+import { GoogleLogin } from 'react-google-login';
 import * as FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import GoogleLoginButton from '../src/googleLoginButton';
@@ -19,20 +19,29 @@ import GoogleLoginButton from '../src/googleLoginButton';
 describe('<GoogleLoginButton />', () => {
 
     let clientId: string;
-    let onSuccess: (response: GoogleLoginResponse | GoogleLoginResponseOffline) => void;
+    let callback: () => void;
 
     before(() => {
         clientId = String(Math.random());
-        onSuccess = sinon.stub();
+        callback = sinon.spy();
     });
 
     it('renders <GoogleLogin />', () => {
-        const wrapper = shallow(<GoogleLoginButton clientId={clientId} callback={onSuccess} />);
+        const props = { clientId, callback };
+        const googleLoginProps = {
+            ...props,
+            onSuccess: callback,
+            onFailure: callback,
+            className: 'btn btn-danger'
+        };
+
+        const wrapper = shallow(<GoogleLoginButton {...props} />);
         expect(wrapper.find('span.google-login-button')).to.have.length(1);
         expect(wrapper.find(GoogleLogin)).to.have.length(1);
+        expect(wrapper.find(FontAwesomeIcon)).to.have.length(1);
+        expect(wrapper.contains(<GoogleLogin {...googleLoginProps} />)).to.be.true;
         expect(wrapper.contains(<FontAwesomeIcon icon={['fab', 'google']} />)).to.be.true;
     });
 
     it('should include css file');
-
 });
