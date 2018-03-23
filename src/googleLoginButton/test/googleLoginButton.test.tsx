@@ -1,3 +1,9 @@
+// setup file
+import { configure } from 'enzyme';
+import * as Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
@@ -8,7 +14,7 @@ import { expect } from 'chai';
 import { GoogleLogin, GoogleLoginResponse, GoogleLoginResponseOffline } from 'react-google-login';
 import * as FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
-import GoogleLoginButton from '../dist/googleLoginButton';
+import GoogleLoginButton from '../src/googleLoginButton';
 
 describe('<GoogleLoginButton />', () => {
 
@@ -22,9 +28,9 @@ describe('<GoogleLoginButton />', () => {
 
     it('renders <GoogleLogin />', () => {
         const wrapper = shallow(<GoogleLoginButton clientId={clientId} callback={onSuccess} />);
-        expect(wrapper.find(GoogleLogin)).to.have.length(1);
         expect(wrapper.find('span.google-login-button')).to.have.length(1);
-        expect(wrapper.find(<FontAwesomeIcon icon={['fab', 'google']} />)).to.have.length(1);
+        expect(wrapper.find(GoogleLogin)).to.have.length(1);
+        expect(wrapper.contains(<FontAwesomeIcon icon={['fab', 'google']} />)).to.be.true;
     });
 
     it('should include css file');
