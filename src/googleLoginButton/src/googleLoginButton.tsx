@@ -2,9 +2,9 @@ import * as React from 'react';
 import { GoogleLogin, GoogleLoginResponse, GoogleLoginResponseOffline } from 'react-google-login';
 import * as FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
-import fontawesome from '@fortawesome/fontawesome';
-import * as faGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
-fontawesome.library.add(faGoogle);
+// import fontawesome from '@fortawesome/fontawesome';
+// import * as faGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
+// fontawesome.library.add(faGoogle);
 
 import '../assets/googleLoginButton.css';
 
