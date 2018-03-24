@@ -74,9 +74,20 @@ describe('<FacebookLoginButton />', () => {
         const props = { appId, callback, buttonText };
         facebookLoginButton = shallow(<FacebookLoginButton {...props} />);
         const reactFacebookLoginElement = facebookLoginButton.find(ReactFacebookLogin);
-        const buttonElement = (reactFacebookLoginElement.prop('render') as any)({ isSdkLoaded: true });
+        const buttonElement = (reactFacebookLoginElement.prop('render') as any)({ isSdkLoaded: true, isProcessing: true });
         const divWrapper = shallow(<div>{buttonElement}</div>);
         const button = divWrapper.find(Button);
+
+        expect(button.prop('disabled')).to.be.true;
         expect(button.render().text()).to.equal(buttonText);
-    })
+    });
+
+    it('doesnt render button if skd is not loaded', () => {
+        const props = { appId, callback, buttonText };
+        facebookLoginButton = shallow(<FacebookLoginButton {...props} />);
+        const reactFacebookLoginElement = facebookLoginButton.find(ReactFacebookLogin);
+        const buttonElement = (reactFacebookLoginElement.prop('render') as any)({ isSdkLoaded: false });
+
+        expect(buttonElement).to.be.false;
+    });
 });

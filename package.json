@@ -6,6 +6,7 @@
   "scripts": {
     "pretest": "node scripts/pretest.js",
     "test": "nyc mocha --recursive --require source-map-support/register --require ignore-styles src/**/tests/*.test.js",
+    "test:quick": "mocha --recursive --require source-map-support/register --require ignore-styles src/**/tests/*.test.js",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
     "build": "webpack",

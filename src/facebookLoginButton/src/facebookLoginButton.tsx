@@ -24,7 +24,7 @@ export function FacebookLoginButton (props: IProps): React.ReactElement<IProps> 
         return renderProps.isSdkLoaded ? (
             <Button
                 onClick={renderProps.onClick}
-                disabled={renderProps.isDisabled && !renderProps.isProcessing}
+                disabled={renderProps.isDisabled || renderProps.isProcessing}
                 className="facebook-login-button"
                 bsStyle="primary"
             >
