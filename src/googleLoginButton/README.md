@@ -2,11 +2,11 @@
 
 `react-google-login` with icon in bootrap button.
 
-![button screenshot](./screenshot.jpg)
+![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/develop/src/googleLoginButton/screenshot.jpg)
 
-All props of `react-google-login` plus
+All props of `react-google-login` and
 
-## callback
+* callback
 
 callback is assigned to both `onSuccess` and `onFailure` of `react-google-login`
 
@@ -23,7 +23,7 @@ callback is assigned to both `onSuccess` and `onFailure` of `react-google-login`
 
 Must include fortawesome and bootstrap globally
 
-### index.html
+### index.html example
 
 ```html
 
@@ -32,7 +32,7 @@ Must include fortawesome and bootstrap globally
 
 ```
 
-### index.jsx
+### index.jsx example
 
 ```javascript
 

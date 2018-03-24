@@ -1,4 +1,5 @@
 stories/
 tests/
 tsconfig.test.json
+tsconfig.json
 src/

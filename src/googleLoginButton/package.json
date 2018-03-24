@@ -1,9 +1,13 @@
 {
   "name": "@coolgk/react-google-login-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Component: Google login button",
   "main": "dist/googleLoginButton.js",
-  "keywords": ["google login", "react", "google sign in"],
+  "keywords": [
+    "google login",
+    "react",
+    "google sign in"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coolgk/react-components.git"
