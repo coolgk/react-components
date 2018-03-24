@@ -2,7 +2,9 @@
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
+
+// const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
     entry: "./src/test.tsx",
@@ -46,6 +48,7 @@ module.exports = {
             template: './src/test.html'
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new Dotenv()
     ],
     mode: 'development'
 };
