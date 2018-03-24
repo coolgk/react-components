@@ -1,8 +1,9 @@
 {
   "name": "@coolgk/react-google-login-button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Component: Google login button",
   "main": "dist/googleLoginButton.js",
+  "types": "dist/googleLoginButton.d.ts",
   "keywords": [
     "google login",
     "react",

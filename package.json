@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/coolgk/react-components#readme",
   "devDependencies": {
+    "@coolgk/react-google-login-button": "^1.0.1",
     "@storybook/addon-notes": "^3.3.15",
     "@storybook/react": "^3.3.15",
     "@types/chai": "^4.1.2",
