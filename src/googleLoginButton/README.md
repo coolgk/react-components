@@ -1,4 +1,6 @@
-# Google Login Button
+## Google Login Button
+
+`npm i @coolgk/react-google-login-button`
 
 `react-google-login` with icon in bootrap button.
 
@@ -19,11 +21,11 @@ callback is assigned to both `onSuccess` and `onFailure` of `react-google-login`
 
 ```
 
-## requirements
+### requirements
 
 Must include fortawesome and bootstrap globally
 
-### index.html example
+#### index.html example
 
 ```html
 
@@ -32,7 +34,7 @@ Must include fortawesome and bootstrap globally
 
 ```
 
-### index.jsx example
+#### index.jsx example
 
 ```javascript
 
