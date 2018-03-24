@@ -1,0 +1,18 @@
+.google-login-button {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.google-login-button svg {
+    position: absolute;
+    font-size: 1.5em;
+    top: .3em;
+    left: .4em;
+}
+
+.google-login-button button {
+    padding-left: 2.4em;
+    padding-right: .6em;
+}

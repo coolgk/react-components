@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "declaration": true,
+    "module": "commonjs",
+    "target": "ES2017",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "inlineSourceMap": true,
+    "removeComments": false,
+    "strict": true
+  },
+  "include": [
+      "src/*/src/*.tsx",
+      "src/*/tests/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
