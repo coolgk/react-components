@@ -12,7 +12,7 @@ fs.createReadStream(`./README.BASE.md`).pipe(
         return new Promise((resolve) => {
             fs.access(`${folder}/README.md`, fs.constants.R_OK, (error) => {
                 if (error) return resolve(consoleLogError(error));
-                writeStream.write(`- [${path.basename(folder)}](#${folder}/README.md)\n`, resolve);
+                writeStream.write(`- [${path.basename(folder)}](${folder}/README.md)\n`, resolve);
             });
         });
     });

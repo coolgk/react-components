@@ -1,6 +1,6 @@
 # React Components
 
-- [googleLoginButton](#./src/googleLoginButton/README.md)
+- [googleLoginButton](./src/googleLoginButton/README.md)
 
 ## Google Login Button
 
