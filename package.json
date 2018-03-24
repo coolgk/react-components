@@ -9,6 +9,7 @@
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
     "build": "webpack",
+    "readme": "node scripts/readme.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "storybook": "export $(cat .env | xargs) && start-storybook -p 9001 -c .storybook"
   },
