@@ -1,0 +1,12 @@
+.facebook-login-button {
+    position: relative;
+    padding: 0.45em .6em .4em 1.7em;
+}
+
+.facebook-login-button svg {
+    position: absolute;
+    left: 0.28em;
+    top: .25em;
+    /* bottom: 0; */
+    font-size: 1.5em;
+}

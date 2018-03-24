@@ -1,0 +1,62 @@
+{
+  "name": "@coolgk/react-facebook-login-button",
+  "version": "1.0.0",
+  "description": "React Component: Facebook login button",
+  "main": "dist/facebookLoginButton.js",
+  "types": "dist/facebookLoginButton.d.ts",
+  "keywords": [
+    "facebook login",
+    "react",
+    "facebook sign in"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolgk/react-components.git"
+  },
+  "author": "Daniel Gong <daniel.k.gong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coolgk/react-components/issues"
+  },
+  "homepage": "https://github.com/coolgk/react-components#readme",
+  "scripts": {
+    "pretest": "rm -fr ./dist && mkdir ./dist && cp -r ./assets ./dist/assets && tsc --project tsconfig.test.json",
+    "test": "nyc mocha --recursive --require source-map-support/register --require ignore-styles ./dist/tests",
+    "test:quick": "tsc --project tsconfig.test.json && mocha --recursive --require source-map-support/register --require ignore-styles  ./dist/tests",
+    "prepublishOnly": "rm -fr ./dist/* && tsc",
+    "build": "rm -fr ./dist/* && tsc"
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "0.0.18",
+    "@types/react-bootstrap": "^0.32.6",
+    "react-bootstrap": "^0.32.1",
+    "react-facebook-login": "^4.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-brands": "^5.0.8",
+    "@types/chai": "^4.1.2",
+    "@types/enzyme": "^3.1.9",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/mocha": "^5.0.0",
+    "@types/react": "^16.0.40",
+    "@types/sinon": "^4.3.0",
+    "chai": "^4.1.2",
+    "core-js": "^2.5.3",
+    "coveralls": "^3.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^11.6.2",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.0.5",
+    "nyc": "^11.6.0",
+    "raf": "^3.4.0",
+    "sinon": "^4.4.8",
+    "source-map-support": "^0.5.4",
+    "typescript": "^2.7.2"
+  }
+}
