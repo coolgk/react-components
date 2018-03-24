@@ -1,6 +1,38 @@
 # Google Login Button
 
-must include fortawesome and bootstrap globally either in html or entry file (e.g. index.jsx)
+`react-google-login` with icon in bootrap button.
+
+![button screenshot](./screenshot.jpg)
+
+All props of `react-google-login` plus
+
+## callback
+
+callback is assigned to both `onSuccess` and `onFailure` of `react-google-login`
+
+```javascript
+
+<GoogleLoginButton
+    clientId={'[your google client id]'}
+    callback={console.log}
+/>
+
+```
+
+## requirements
+
+Must include fortawesome and bootstrap globally
+
+### index.html
+
+```html
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+```
+
+### index.jsx
 
 ```javascript
 

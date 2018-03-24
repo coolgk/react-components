@@ -16,7 +16,7 @@ export interface IProps {
     [prop: string]: any;
 }
 
-export function GoogleLoginButton (props: IProps): React.ReactElement<IProps> {
+export function GoogleLoginButton (props: IProps) {
     const googleLoginProps = {
         onSuccess: props.callback,
         onFailure: props.callback,
