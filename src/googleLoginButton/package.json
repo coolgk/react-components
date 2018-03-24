@@ -1,14 +1,23 @@
 {
   "name": "@coolgk/react-google-login-button",
   "version": "1.0.0",
-  "description": "",
-  "main": "googleLoginButton.js",
-  "keywords": [],
-  "author": "",
+  "description": "React Component: Google login button",
+  "main": "dist/googleLoginButton.js",
+  "keywords": ["google login", "react", "google sign in"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolgk/react-components.git"
+  },
+  "author": "Daniel Gong <daniel.k.gong@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coolgk/react-components/issues"
+  },
+  "homepage": "https://github.com/coolgk/react-components#readme",
   "scripts": {
     "pretest": "rm -fr ./dist/* && cp -r ./assets ./dist/assets && tsc --project tsconfig.test.json",
     "test": "nyc mocha --recursive --require source-map-support/register --require ignore-styles ./dist/tests",
+    "prepublishOnly": "rm -fr ./dist/* && tsc",
     "build": "rm -fr ./dist/* && tsc"
   },
   "dependencies": {

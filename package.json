@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --open",
     "build": "webpack",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "storybook": "export $(cat .env | xargs) && start-storybook -p 9001 -c .storybook --host 0.0.0.0"
+    "storybook": "export $(cat .env | xargs) && start-storybook -p 9001 -c .storybook"
   },
   "repository": {
     "type": "git",
