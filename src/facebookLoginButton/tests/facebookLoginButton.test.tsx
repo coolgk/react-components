@@ -12,6 +12,7 @@ import { expect } from 'chai';
 
 import ReactFacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import * as FontAwesomeIcon from '@fortawesome/react-fontawesome';
+
 import fontawesome from '@fortawesome/fontawesome';
 import * as faFacebookF from '@fortawesome/fontawesome-free-brands/faFacebookF';
 fontawesome.library.add(faFacebookF);
@@ -57,14 +58,14 @@ describe('<FacebookLoginButton />', () => {
             isSdkLoaded: true
         };
 
-        const buttonElement = (reactFacebookLoginElement.prop('render') as any)(renderProps);
-        const divWrapper = shallow(<div>{buttonElement}</div>);
+        const ButtonElement = reactFacebookLoginElement.prop('render');
+        const buttonElement = shallow(<ButtonElement {...renderProps} />);
+        let button = buttonElement.find(Button);
 
-        const button = divWrapper.find(Button);
-        expect(button).to.have.length(1);
         expect(button.prop('className')).to.equal('facebook-login-button');
         expect(button.prop('bsStyle')).to.equal('primary');
 
+        button = button.shallow();
         expect(button.find(FontAwesomeIcon)).to.have.length(1);
         expect(button.contains(<FontAwesomeIcon icon={['fab', 'facebook-f']} />)).to.be.true;
         expect(button.render().text()).to.equal('Login with Facebook');
@@ -82,12 +83,14 @@ describe('<FacebookLoginButton />', () => {
         expect(button.render().text()).to.equal(buttonText);
     });
 
-    it('doesnt render button if skd is not loaded', () => {
+    it('disables button if skd is not loaded', () => {
         const props = { appId, callback, buttonText };
         facebookLoginButton = shallow(<FacebookLoginButton {...props} />);
         const reactFacebookLoginElement = facebookLoginButton.find(ReactFacebookLogin);
         const buttonElement = (reactFacebookLoginElement.prop('render') as any)({ isSdkLoaded: false });
+        const divWrapper = shallow(<div>{buttonElement}</div>);
+        const button = divWrapper.find(Button);
 
-        expect(buttonElement).to.be.false;
+        expect(button.prop('disabled')).to.be.true;
     });
 });

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import ReactFacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import * as FontAwesomeIcon from '@fortawesome/react-fontawesome';
-
 import { Button } from 'react-bootstrap';
 
 import '../assets/facebookLoginButton.css';
@@ -19,20 +18,20 @@ export interface IProps {
     [prop: string]: any;
 }
 
-export function FacebookLoginButton (props: IProps): React.ReactElement<IProps> {
+export function FacebookLoginButton (props: IProps) {
     const button = (renderProps: IRenderProps) => {
-        return renderProps.isSdkLoaded ? (
+        return (
             <Button
                 onClick={renderProps.onClick}
-                disabled={renderProps.isDisabled || renderProps.isProcessing}
+                disabled={renderProps.isDisabled || renderProps.isProcessing || !renderProps.isSdkLoaded}
                 className="facebook-login-button"
                 bsStyle="primary"
             >
                 <FontAwesomeIcon icon={['fab', 'facebook-f']} />
                 {props.buttonText || 'Login with Facebook'}
             </Button>
-        ) : false;
-    }
+        );
+    };
 
     return (
         <ReactFacebookLogin
@@ -43,18 +42,3 @@ export function FacebookLoginButton (props: IProps): React.ReactElement<IProps> 
 }
 
 export default FacebookLoginButton;
-
-/*
-export function button (props: IButtonProps): React.ReactElement<IButtonProps> | false {
-    return props.isSdkLoaded ? (
-        <Button
-            onClick={props.onClick}
-            disabled={props.isDisabled && !props.isProcessing}
-            className="facebook-login-button"
-            bsStyle="primary"
-        >
-            <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-            Login with Facebook
-        </Button>
-    ) : false;
-} */

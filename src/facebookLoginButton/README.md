@@ -1,4 +1,4 @@
-## Google Login Button
+## Facebook Login Button
 
 `npm i @coolgk/react-google-login-button`
 

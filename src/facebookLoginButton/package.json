@@ -22,7 +22,7 @@
   "scripts": {
     "pretest": "rm -fr ./dist && mkdir ./dist && cp -r ./assets ./dist/assets && tsc --project tsconfig.test.json",
     "test": "nyc mocha --recursive --require source-map-support/register --require ignore-styles ./dist/tests",
-    "test:quick": "tsc --project tsconfig.test.json && mocha --recursive --require source-map-support/register --require ignore-styles  ./dist/tests",
+    "test:quick": "tsc --project tsconfig.test.json && mocha --recursive --require source-map-support/register --require ignore-styles ./dist/tests",
     "prepublishOnly": "rm -fr ./dist/* && tsc",
     "build": "rm -fr ./dist/* && tsc"
   },
