@@ -7,7 +7,7 @@ const Dotenv = require('dotenv-webpack');
 // const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
-    entry: "./src/test.tsx",
+    entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
         path: __dirname + "/dist"
@@ -45,7 +45,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/test.html'
+            template: './src/index.html'
         }),
         new webpack.HotModuleReplacementPlugin(),
         new Dotenv()

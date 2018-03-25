@@ -7,7 +7,6 @@ configure({ adapter: new Adapter() });
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-// import 'mocha';
 import * as sinon from 'sinon';
 import { expect } from 'chai';
 
