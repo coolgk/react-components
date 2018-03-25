@@ -7,7 +7,7 @@ fontawesome.library.add(faGoogle);
 
 import { configure } from '@storybook/react';
 
-const req = require.context('../src', true, /\.story\.js$/);
+const req = require.context('../src', true, /\.story\.jsx?$/);
 
 function loadStories() {
     // require('../src/googleLoginButton/stories/googleLoginButton.story');
