@@ -26,7 +26,7 @@
   "homepage": "https://github.com/coolgk/react-components#readme",
   "devDependencies": {
     "@coolgk/react-google-login-button": "^1.0.2",
-    "@fortawesome/react-fontawesome": "0.0.17",
+    "@fortawesome/react-fontawesome": "0.1.0-6",
     "@storybook/addon-notes": "^3.3.15",
     "@storybook/react": "^3.3.15",
     "@types/chai": "^4.1.2",
@@ -34,7 +34,6 @@
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/mocha": "^5.0.0",
     "@types/react-bootstrap": "^0.32.6",
-    "@types/react-fontawesome": "^1.6.2",
     "@types/sinon": "^4.3.0",
     "awesome-typescript-loader": "^4.0.1",
     "babel-core": "^6.26.0",

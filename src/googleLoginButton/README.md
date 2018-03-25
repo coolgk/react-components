@@ -4,7 +4,7 @@
 
 `react-google-login` with icon in bootrap button.
 
-![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/develop/src/googleLoginButton/screenshot.jpg)
+![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/master/src/googleLoginButton/screenshot.jpg)
 
 All props of `react-google-login` and
 
@@ -15,7 +15,7 @@ callback is assigned to both `onSuccess` and `onFailure` of `react-google-login`
 ```javascript
 
 <GoogleLoginButton
-    clientId={'[your google client id]'}
+    clientId="[your google client id]"
     callback={console.log}
 />
 

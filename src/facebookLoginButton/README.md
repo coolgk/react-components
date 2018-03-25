@@ -1,21 +1,21 @@
 ## Facebook Login Button
 
-`npm i @coolgk/react-google-login-button`
+`npm i @coolgk/react-facebook-login-button`
 
-`react-google-login` with icon in bootrap button.
+`react-facebook-login` with icon in bootrap button.
 
-![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/develop/src/googleLoginButton/screenshot.jpg)
+![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/master/src/facebookLoginButton/screenshot.jpg)
 
-All props of `react-google-login` and
+All props of `react-facebook-login` except `textButton` and `render`
 
-* callback
+new props
 
-callback is assigned to both `onSuccess` and `onFailure` of `react-google-login`
+* buttonText - same as `textButton`
 
 ```javascript
 
-<GoogleLoginButton
-    clientId={'[your google client id]'}
+<FacebookLoginButton
+    appId="..."
     callback={console.log}
 />
 
@@ -43,6 +43,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
 
 import fontawesome from '@fortawesome/fontawesome';
 import * as faGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
-fontawesome.library.add(faGoogle);
+fontawesome.library.add(faFacebookF);
 
 ```
