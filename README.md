@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/coolgk/react-components.svg?branch=master)](https://travis-ci.org/coolgk/react-components) [![Coverage Status](https://coveralls.io/repos/github/coolgk/react-components/badge.svg?branch=master)](https://coveralls.io/github/coolgk/react-components?branch=master) [![dependencies Status](https://david-dm.org/coolgk/react-components/status.svg)](https://david-dm.org/coolgk/react-components) [![Known Vulnerabilities](https://snyk.io/test/github/coolgk/react-components/badge.svg)](https://snyk.io/test/github/coolgk/react-components)
 
 - [googleLoginButton](./src/googleLoginButton/README.md)
+- [facebookLoginButton](./src/facebookLoginButton/README.md)
 
 ## Google Login Button
 
@@ -10,7 +11,7 @@
 
 `react-google-login` with icon in bootrap button.
 
-![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/develop/src/googleLoginButton/screenshot.jpg)
+![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/master/src/googleLoginButton/screenshot.jpg)
 
 All props of `react-google-login` and
 
@@ -21,7 +22,7 @@ callback is assigned to both `onSuccess` and `onFailure` of `react-google-login`
 ```javascript
 
 <GoogleLoginButton
-    clientId={'[your google client id]'}
+    clientId="[your google client id]"
     callback={console.log}
 />
 
@@ -50,5 +51,53 @@ import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
 import fontawesome from '@fortawesome/fontawesome';
 import * as faGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
 fontawesome.library.add(faGoogle);
+
+```
+## Facebook Login Button
+
+`npm i @coolgk/react-facebook-login-button`
+
+`react-facebook-login` with icon in bootrap button.
+
+![button screenshot](https://raw.githubusercontent.com/coolgk/react-components/master/src/facebookLoginButton/screenshot.jpg)
+
+All props of `react-facebook-login` except `textButton` and `render`
+
+new props
+
+* buttonText - same as `textButton`
+
+```javascript
+
+<FacebookLoginButton
+    appId="..."
+    callback={console.log}
+/>
+
+```
+
+### requirements
+
+Must include fortawesome and bootstrap globally
+
+#### index.html example
+
+```html
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+```
+
+#### index.jsx example
+
+```javascript
+
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
+
+import fontawesome from '@fortawesome/fontawesome';
+import * as faGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
+fontawesome.library.add(faFacebookF);
 
 ```
