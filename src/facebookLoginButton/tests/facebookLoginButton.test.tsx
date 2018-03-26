@@ -11,7 +11,7 @@ import * as sinon from 'sinon';
 import { expect } from 'chai';
 
 import ReactFacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
-import * as FontAwesomeIcon from '@fortawesome/react-fontawesome';
+// import * as FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import fontawesome from '@fortawesome/fontawesome';
 import * as faFacebookF from '@fortawesome/fontawesome-free-brands/faFacebookF';
@@ -66,8 +66,10 @@ describe('<FacebookLoginButton />', () => {
         expect(button.prop('bsStyle')).to.equal('primary');
 
         button = button.shallow();
-        expect(button.find(FontAwesomeIcon)).to.have.length(1);
-        expect(button.contains(<FontAwesomeIcon icon={['fab', 'facebook-f']} />)).to.be.true;
+        // expect(button.find(FontAwesomeIcon)).to.have.length(1);
+        // expect(button.contains(<FontAwesomeIcon icon={['fab', 'facebook-f']} />)).to.be.true;
+        expect(button.find('.fab.fa-facebook-f')).to.have.length(1);
+        expect(button.contains(<i className="fab fa-facebook-f"></i>)).to.be.true;
         expect(button.render().text()).to.equal('Login with Facebook');
     });
 
