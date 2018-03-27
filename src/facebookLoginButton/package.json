@@ -1,6 +1,6 @@
 {
   "name": "@coolgk/react-facebook-login-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Component: Facebook login button",
   "main": "dist/facebookLoginButton.js",
   "types": "dist/facebookLoginButton.d.ts",
