@@ -6,9 +6,12 @@ import * as faFacebookF from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import * as faGoogle from '@fortawesome/fontawesome-free-brands/faGoogle';
 fontawesome.library.add(faFacebookF, faGoogle);
 
-import GoogleLoginButton from './googleLoginButton/src/googleLoginButton'
-import FacebookLoginButton from './facebookLoginButton/src/facebookLoginButton'
-// import GoogleLoginButton from '@coolgk/react-google-login-button'
+// import GoogleLoginButton from './googleLoginButton/src/googleLoginButton';
+// import FacebookLoginButton from './facebookLoginButton/src/facebookLoginButton';
+// import FacebookLoginButton from './facebookLoginButton/dist/facebookLoginButton';
+
+import GoogleLoginButton from '@coolgk/react-google-login-button';
+import FacebookLoginButton from '@coolgk/react-facebook-login-button';
 
 ReactDOM.render(
   <div>

@@ -1,6 +1,6 @@
 {
   "name": "@coolgk/react-facebook-login-button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Component: Facebook login button",
   "main": "dist/facebookLoginButton.js",
   "types": "dist/facebookLoginButton.d.ts",
@@ -36,16 +36,16 @@
     "react": "^16.2.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome": "^1.1.4",
-    "@fortawesome/fontawesome-free-brands": "^5.0.8",
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.9",
     "@types/chai": "^4.1.2",
     "@types/enzyme": "^3.1.9",
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/mocha": "^5.0.0",
-    "@types/react": "^16.0.40",
+    "@types/react": "^16.1.0",
     "@types/sinon": "^4.3.0",
     "chai": "^4.1.2",
-    "core-js": "^2.5.3",
+    "core-js": "^2.5.4",
     "coveralls": "^3.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -55,8 +55,8 @@
     "mocha": "^5.0.5",
     "nyc": "^11.6.0",
     "raf": "^3.4.0",
-    "sinon": "^4.4.8",
+    "sinon": "^4.5.0",
     "source-map-support": "^0.5.4",
-    "typescript": "^2.7.2"
+    "typescript": "^2.8.1"
   }
 }
