@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/coolgk/react-components#readme",
   "devDependencies": {
-    "@coolgk/react-google-login-button": "^1.0.2",
+    "@coolgk/react-google-login-button": "^1.0.3",
     "@fortawesome/react-fontawesome": "0.0.18",
     "@storybook/addon-notes": "^3.4.0",
     "@storybook/react": "^3.4.0",
@@ -67,7 +67,7 @@
     "webpack-hot-middleware": "^2.21.2"
   },
   "dependencies": {
-    "@coolgk/react-facebook-login-button": "^1.0.2",
+    "@coolgk/react-facebook-login-button": "^1.0.3",
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/fontawesome-free-brands": "^5.0.9",
     "@types/react": "^16.1.0",

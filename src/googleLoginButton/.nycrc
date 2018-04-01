@@ -17,6 +17,6 @@
     },
     "report-dir": "./dist/test-coverage",
     "exclude": [
-        "src/**/tests/**"
+        "dist/tests"
     ]
 }

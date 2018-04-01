@@ -2,7 +2,7 @@ import * as React from 'react';
 import ReactFacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import { Button } from 'react-bootstrap';
 
-// FontAwesomeIcon 26 March causes typescript compile problems
+// FontAwesomeIcon 26 March causes typescript compile problems in tests and storybook
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import '../assets/facebookLoginButton.css';
@@ -29,11 +29,12 @@ export function FacebookLoginButton (props: IProps) {
                 className="facebook-login-button"
                 bsStyle="primary"
             >
-                <i className="fab fa-facebook-f"></i>
                 <FontAwesomeIcon icon={['fab', 'facebook-f']} />
                 {props.buttonText || 'Login with Facebook'}
             </Button>
-        ); // <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+        );
+        // <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+        // <i className="fab fa-facebook-f"></i>
     };
 
     return (
